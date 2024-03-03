@@ -2,18 +2,18 @@
 version: 2
 
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
-    columns:
-      - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
   - name: users
     config:
       materialized: table
-
+  - name: movies
+    config:
+      materialized: table
+  - name: scores
+    config:
+      materialized: table
+  - name: scores_users_movies
+    config:
+      materialized: table
 
 sources: 
   - name: recomender_system_raw
