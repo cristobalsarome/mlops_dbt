@@ -1,10 +1,3 @@
-
-
-
-
-
--- COLUMNS
--- index,id,Name,Release Date,unknown,Action,Adventure,Animation,Children's,Comedy,Crime,Documentary,Drama,Fantasy,Film-Noir,Horror,Musical,Mystery,Romance,Sci-Fi,Thriller,War,Western,IMDB URL
 select 
 CAST(movies.id as INTEGER) as id,
 CAST(movies."Name" as VARCHAR) as name,
