@@ -23,4 +23,4 @@ CASE WHEN movies."War" = 1 THEN TRUE ELSE FALSE END as genre_war,
 CASE WHEN movies."Western" = 1 THEN TRUE ELSE FALSE END as genre_western,
 CAST(movies."IMDB_URL" as VARCHAR) as imdb_url
 
-from {{ source('recomender_system_raw', 'movies') }} as movies
+from {{ source('recomender_system_raw', 'movies_raw') }} as movies

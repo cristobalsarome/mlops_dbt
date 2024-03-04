@@ -8,4 +8,4 @@ CAST(scores.rating as INTEGER) as rating
 
 
 
- from {{ source('recomender_system_raw', 'scores') }}
+ from {{ source('recomender_system_raw', 'scores_raw') }} scores

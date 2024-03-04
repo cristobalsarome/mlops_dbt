@@ -21,6 +21,15 @@ sources:
     database: mlops
     schema: source
     tables:
-      - name: scores
-      - name: movies
-      - name: users
+      - name: scores_raw
+        meta:
+          dagster:
+            asset_key: ["scores_raw"]
+      - name: movies_raw
+        meta:
+          dagster:
+            asset_key: ["movies_raw"]
+      - name: users_raw
+        meta:
+          dagster:
+            asset_key: ["users_raw"]
